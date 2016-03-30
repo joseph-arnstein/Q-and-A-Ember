@@ -1,7 +1,6 @@
 <h3>Here's a post. This line is inside component post-tile.hbs</h3>
 
-<li>{{post.title}} by {{post.author}}
-</li>
+<li>{{#link-to 'post' post.id}}{{post.title}} by {{post.author}} {{/link-to}}</li>
 <img src={{post.image}}>
 <br>
 {{update-post post=post update="update"}}
