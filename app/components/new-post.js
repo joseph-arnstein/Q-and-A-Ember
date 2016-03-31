@@ -11,9 +11,9 @@ export default Ember.Component.extend({
         author: this.get('author') ? this.get('author'): "",
         title: this.get('title') ? this.get('title'): "",
         image: this.get('image') ? this.get('image'): "",
-        content: this.get('content') ? this.get('content'): "", //comma here?
+        content: this.get('content') ? this.get('content'): "",
       };
-      this.set('showNewPostForm', false);
+      this.set('addPost', false);
       this.sendAction('save2', params);
     }
   }

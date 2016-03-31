@@ -1,4 +1,17 @@
 <h1>See article (this sentence rendered by templates/post.hbs, routed to routes/post.js)</h1>
 <h2>{{model.title}}</h2>
 
-{{full-post post=model}}
+{{full-post post=model update="update" destroyPost="destroyPost"}}
+
+{{new-comment saveComment2="saveComment3" post=model}}
+
+<ul>
+  {{#each model.comments as |comment|}}
+    <li>{{comment.post.title}}
+      <br>
+      by: {{comment.commentor}}
+      <br>
+      Hey you:{{comment.complaint}}
+    </li>
+  {{/each}}
+</ul>

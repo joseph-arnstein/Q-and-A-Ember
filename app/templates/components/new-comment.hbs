@@ -1,0 +1,21 @@
+
+{{#if whine}}
+  <h3>Add Comment (in new-comment.hbs)</h3>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="commentor">Your name</label>
+        {{input value=commentor id="commentor"}}
+      </div>
+
+      <div class="form-group">
+        <label for="complaint">Whine about something here:</label>
+        {{input value=complaint id="complaint"}}
+      </div>
+
+      <button {{action 'saveComment1'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'showCommentForm'}}>Comment</button>
+{{/if}}

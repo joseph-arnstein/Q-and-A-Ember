@@ -1,9 +1,26 @@
 <h1>Let's get going, This line rendered by index.hbs</h1>
 
+<h3>Artlicles</h3>
+
 <ul>
-  {{#each model as |post|}}
-    {{post-tile post=post update="update" destroyPost="destroyPost"}}
+  {{#each model.posts as |post|}}
+    {{post-tile post=post}}
   {{/each}}
 </ul>
 
 {{new-post save2="save3"}}
+
+<h3>Comments</h3>
+
+{{new-comment saveComment2="saveComment3"}}
+
+<!-- <ul>
+  {{#each model.comments as |comment|}}
+    <li>{{comment.post.title}}
+      <br>
+      by: {{comment.commentor}}
+      <br>
+      Hey you:{{comment.complaint}}
+    </li>
+  {{/each}}
+</ul> -->
