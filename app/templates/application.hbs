@@ -1,29 +1,4 @@
-<div class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<!-- collapse button -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-
-					<!-- website name -->
-					<a href="" class="navbar-brand">Rip City Bawl</a>
-
-				</div>
-
-
-				<!-- navigation menu items -->
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="">Home</a></li>
-            <li><a href="/post/0">3-Jay</a></li>
-						<li><a href="/post/1">Play-offs</a></li>
-					</ul>
-				</div>
-
-			</div>
-		</div>
-
-{{outlet}}
+<div class="container">
+  {{partial 'navbar'}}
+  {{outlet}}
+</div>

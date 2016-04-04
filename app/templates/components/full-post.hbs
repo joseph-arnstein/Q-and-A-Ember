@@ -1,6 +1,7 @@
-<h1>This line and the article and image are in templates/components/full-post.hbs</h1>
-<h3>{{post.title}}</h3>
-<h3>{{post.content}}</h3>
+<h1>{{post.title}}</h1>
+<h4>Post by: {{post.author}}</h4>
+
+<p>{{post.content}}</p>
 <img src={{post.image}}>
 
 {{update-post post=post update="update"}}

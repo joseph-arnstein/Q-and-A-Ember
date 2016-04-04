@@ -1,6 +1,6 @@
-<h1>Let's get going, This line rendered by index.hbs</h1>
+<h1>Question and Answer</h1>
 
-<h3>Artlicles</h3>
+<h3>Write a question or answer one of the questions posted by an other user.</h3>
 
 <ul>
   {{#each model.posts as |post|}}
@@ -8,19 +8,6 @@
   {{/each}}
 </ul>
 
+<h3>Click the button to sumbit a question</h3>
+
 {{new-post save2="save3"}}
-
-<h3>Comments</h3>
-
-{{new-comment saveComment2="saveComment3"}}
-
-<!-- <ul>
-  {{#each model.comments as |comment|}}
-    <li>{{comment.post.title}}
-      <br>
-      by: {{comment.commentor}}
-      <br>
-      Hey you:{{comment.complaint}}
-    </li>
-  {{/each}}
-</ul> -->
